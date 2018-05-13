@@ -16,7 +16,6 @@ import { HlsSourceHandler } from 'videojs-contrib-hls';
 // import 'videojs-flash';
 // import 'videojs-resolution-switcher';
 
-
 export default class VideoJsForReact extends Component {
   constructor(props) {
     super(props);

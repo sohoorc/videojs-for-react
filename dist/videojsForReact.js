@@ -35,7 +35,7 @@ export default class VideoJsForReact extends Component {
     videojs.getTech('html5').registerSourceHandler(HlsSourceHandler('html5'), 0);
     let _this = this
     this.player = videojs(this.videoContainer, {
-      ...this.props,
+      // ...this.props,
       plugins: {
         videoJsResolutionSwitcher: {
           default: 'low', // Default resolution [{Number}, 'low', 'high'],
