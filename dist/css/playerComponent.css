@@ -1,0 +1,5 @@
+@import './videojs-resolution-switcher.css';
+
+.vjs-menu-button-popup div.vjs-menu{
+  left: 0;
+}
