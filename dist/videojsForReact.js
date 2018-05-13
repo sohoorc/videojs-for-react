@@ -8,13 +8,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import videojs from 'video.js';
-// import Swf from 'videojs-swf/dist/video-js.swf';
-import './css/playerComponent.css';
-import 'video.js/dist/video-js.min.css';
-// import 'videojs-flash';
 import './js/videojs-resolution-switcher';
-// import 'videojs-resolution-switcher';
+import 'video.js/dist/video-js.min.css';
+import './css/playerComponent.css';
 import { HlsSourceHandler } from 'videojs-contrib-hls';
+// import Swf from 'videojs-swf/dist/video-js.swf';
+// import 'videojs-flash';
+// import 'videojs-resolution-switcher';
 
 
 export default class VideoJsForReact extends Component {
@@ -80,7 +80,6 @@ export default class VideoJsForReact extends Component {
       }
     })
   }
-
 
   componentWillUnmount() {
     // 销毁播放器
