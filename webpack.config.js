@@ -13,20 +13,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   use: {
-      //     loader: 'babel-loader',
-      //     options: {
-      //       babelrc: false,
-      //       presets: [
-      //         ['es2015', { modules: false }],
-      //         'react',
-      //       ]
-      //     }
-      //   },
-      // },
       {
         test: /\.css$/,
         use: [
@@ -35,9 +21,12 @@ module.exports = {
         ]
       },
       { 
-        test: /\.js$/, 
+        test:  /\.(js|jsx|mjs)$/, 
         exclude: /node_modules/, 
-        loader: "babel-loader" 
+        loader: "babel-loader"
+        // options: {
+        //   presets: ["env"]
+        // },
       }
     ],
   },
