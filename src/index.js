@@ -1,10 +1,3 @@
-/*
- * @Author: 甘维添
- * @Date: 2017-08-31 15:34:23
- * @Last Modified by: 甘维添
- * @Last Modified time: 2017-12-12 13:47:40
- */
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import videojs from 'video.js';
