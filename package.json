@@ -1,10 +1,12 @@
 {
   "name": "videojs-for-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "videojs-for-react,This is react component",
   "main": "index.js",
   "files": [
-    "dist"
+    "dist",
+    "index.js",
+    "package.json"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,18 +37,18 @@
     "videojs-contrib-hls": "^5.14.1"
   },
   "devDependencies": {
-    "cross-env": "^5.1.5",
-    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-react-app": "^3.1.1",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.1.5",
     "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
     "prop-types": "^15.6.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
-    "webpack": "^4.8.3",
+    "webpack": "^3.x",
     "webpack-cli": "^2.1.3"
   }
 }
