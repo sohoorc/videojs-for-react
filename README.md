@@ -17,8 +17,6 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      resData: '',
-      view: false,
       videoJsOptions: {
         preload: 'auto',  // 预加载
         bigPlayButton: {},  // 大按钮
