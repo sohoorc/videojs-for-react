@@ -1,1 +1,1 @@
-module.exports = require('./dist/videojsForReact');
+module.exports = require('./dist/index');

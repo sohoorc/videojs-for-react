@@ -1,13 +1,14 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack')
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
     "babel-polyfill",
-    "./src/index.js"
+    "./src"
   ],
   output: {
-    path: path.join(__dirname, 'example', 'dist'),
+    path: path.join(__dirname, 'dist'),
     filename: "index.js", // string
     publicPath: '/dist/'
   },
@@ -24,15 +25,11 @@ module.exports = {
         test:  /\.(js|jsx|mjs)$/, 
         exclude: /node_modules/, 
         loader: "babel-loader"
-        // options: {
-        //   presets: ["env"]
-        // },
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader'
       }
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Output Management'
-    })
-  ],
 };
