@@ -82,7 +82,7 @@ export default App;
 
 ##### API
 | API | 用途| 
-| - | :-: | -: | 
+| - | -: | 
 | sourceChanged| 码流切换成功的回调 | 
 | onReady| 播放器准备就绪的回调 | 
 
