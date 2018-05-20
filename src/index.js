@@ -1,10 +1,3 @@
-/*
- * @Author: 甘维添
- * @Date: 2017-08-31 15:34:23
- * @Last Modified by: 甘维添
- * @Last Modified time: 2017-12-12 13:47:40
- */
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import videojs from 'video.js';
@@ -35,16 +28,16 @@ export default class VideoJsForReact extends Component {
     let _this = this
     this.player = videojs(this.videoContainer, {
       ...this.props,
+      ...this.options,
       plugins: {
         videoJsResolutionSwitcher: {
           default: 'low', // Default resolution [{Number}, 'low', 'high'],
           dynamicLabel: true // Display dynamic labels or gear symbol
         }
-      },
+      }
       // flash: {
       //   swf: Swf,
       // },
-      ...this.options
     }, function () {
       let player = this
       let props = _this.props
