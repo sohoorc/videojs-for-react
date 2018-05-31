@@ -54,7 +54,8 @@ export default class VideoJsForReact extends Component {
       //     player.play();
       //   }, 100)
       // }
-      // 判断是否是多码流，单码流调用video.js播放器原生播放，多码流使用插件播放
+
+      // 判断是否是多码流，单码流调用video.js播放器播放，多码流使用插件播放
       if (sources.length > 1) {
         player.updateSrc([...sources])
         player.on('resolutionchange', function () {
