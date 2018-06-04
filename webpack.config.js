@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -18,10 +17,6 @@ module.exports = {
       {
         test: /\.css$/,
         use:["style-loader","css-loader"] 
-        // use: ExtractTextPlugin.extract({
-        //   fallback: "style-loader",
-        //   use: "css-loader"
-        // })
       },
       {
         test: /\.(js|jsx|mjs)$/,
@@ -35,11 +30,6 @@ module.exports = {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader'
       }
-    ],
-  },
-  // plugins:[
-  //   new ExtractTextPlugin({
-  //     filename: '/style/style.css',
-  //   }),
-  // ]
+    ]
+  }
 };
