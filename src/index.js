@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import videojs from 'video.js';
+import { HlsSourceHandler } from 'videojs-contrib-hls';
 import './js/videojs-resolution-switcher';
 import 'video.js/dist/video-js.min.css';
 import './css/playerComponent.css';
-import { HlsSourceHandler } from 'videojs-contrib-hls';
 // import Swf from 'videojs-swf/dist/video-js.swf';
 // import 'videojs-flash';
 // import 'videojs-resolution-switcher';
